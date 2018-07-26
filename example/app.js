@@ -44,7 +44,7 @@ passport.use(new GoogleStrategy({
     //then edit your /etc/hosts local file to point on your private IP. 
     //Also both sign-in button + callbackURL has to be share the same url, otherwise two cookies will be created and lead to lost your session
     //if you use it.
-    callbackURL: "https://dashboard.heroku.com/apps/thawing-scrubland-67334/auth/google/callback",
+    callbackURL: "https://thawing-scrubland-67334.herokuapp.com/auth/google/callback",
     passReqToCallback   : true
   },
   function(request, accessToken, refreshToken, profile, done) {
