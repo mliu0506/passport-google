@@ -22,7 +22,8 @@
     "vows": "^0.8.0"
   },
   "scripts": {
-    "test": "make test"
+    "test": "make test",
+    "start": "node ./example/app.js"
   },
   "repository": {
     "type": "git",

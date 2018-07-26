@@ -14,6 +14,7 @@ var express          = require( 'express' )
 var GOOGLE_CLIENT_ID      = "159209455972-3076tbg3lauu1sc55ntaccg85oha5c5m.apps.googleusercontent.com"
   , GOOGLE_CLIENT_SECRET  = "Gq5J6xEu3dLrD24MAErj4PfC";
 
+var PORT = process.env.PORT || 3000;
 // Passport session setup.
 //   To support persistent login sessions, Passport needs to be able to
 //   serialize users into and deserialize users out of the session.  Typically,
@@ -120,7 +121,10 @@ app.get('/logout', function(req, res){
   res.redirect('/');
 });
 
-server.listen( 3000 );
+// Starts the server to begin listening
+app.listen(PORT, function () {
+  console.log('App listening on PORT: ' + PORT);
+});
 
 
 // Simple route middleware to ensure user is authenticated.
