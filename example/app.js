@@ -11,8 +11,8 @@ var express          = require( 'express' )
 
 // API Access link for creating client ID and secret:
 // https://code.google.com/apis/console/
-var GOOGLE_CLIENT_ID      = "--insert-google-client-id-here--"
-  , GOOGLE_CLIENT_SECRET  = "--insert-google-client-secret-here--";
+var GOOGLE_CLIENT_ID      = "159209455972-3076tbg3lauu1sc55ntaccg85oha5c5m.apps.googleusercontent.com"
+  , GOOGLE_CLIENT_SECRET  = "Gq5J6xEu3dLrD24MAErj4PfC";
 
 // Passport session setup.
 //   To support persistent login sessions, Passport needs to be able to
@@ -43,7 +43,7 @@ passport.use(new GoogleStrategy({
     //then edit your /etc/hosts local file to point on your private IP. 
     //Also both sign-in button + callbackURL has to be share the same url, otherwise two cookies will be created and lead to lost your session
     //if you use it.
-    callbackURL: "http://yourdormain:3000/auth/google/callback",
+    callbackURL: "https://dashboard.heroku.com/apps/thawing-scrubland-67334:3000/auth/google/callback",
     passReqToCallback   : true
   },
   function(request, accessToken, refreshToken, profile, done) {
