@@ -1,0 +1,44 @@
+{
+  "name": "passport-google",
+  "version": "0.1.6",
+  "description": "Passport strategy for Google OAuth 2.0",
+  "main": "./lib/oauth2.js",
+  "directories": {
+    "example": "example",
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {
+    "connect-redis": "^3.3.3",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "passport": "^0.4.0",
+    "passport-google-oauth2": "^0.1.6",
+    "passport-oauth2": "^1.1.2"
+  },
+  "devDependencies": {
+    "vows": "^0.8.0"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mliu0506/passport-google-oauth2.git"
+  },
+  "keywords": [
+    "auth",
+    "google",
+    "google+",
+    "passportjs",
+    "oauth2"
+  ],
+  "author": "Michael Liu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mliu0506/passport-google-oauth2/issues"
+  },
+  "homepage": "https://github.com/mliu0506/passport-google-oauth2"
+}
